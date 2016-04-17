@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>	
+	<head>
+		<meta charset="utf-8">
+		<title>Cities</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="d3/d3.v3.js"></script>
+		<script src="jquery/jquery-2.1.1.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/worldmap.js"></script>
+		<script src="js/cities.js"></script>
+		<script src="js/infobox.js"></script>
+		<script src="js/topbar.js"></script>
+		<script src="js/animate.js"></script>
+		<script src="js/finishbox.js"></script>
+	</head>
+	<body>
+		<div class="shadow"></div>
+		<div class="topBar">
+			<span class="question"></span>
+			<div class="creditsMsg">
+				<span class="creditsLabel"></span>
+				<span class="credits"></span>
+			</div>
+		</div>
+		<div class="worldMap">
+			<img src="images/map.png"/>
+			<svg preserveAspectRatio="xMaxYMax meet" viewBox="0 0 1000 500">
+				<defs>
+					<clipPath id="clip">
+						<rect x="0" y="0" width="1000" height="500" />
+					</clipPath>
+				</defs>
+			</svg> 
+			<div class="markerRed"></div>
+			<div class="markerGreen"></div>
+		</div>	
+		<div class="startBox box">
+			<div class="title">Mark the City</div>
+			<div class="boxText">Mark the given cities on the map. You have total of 20000 km error credits.</div>
+			<button>Start</button>
+		</div>
+		<div class="infoBox box">
+			<div class="boxText">Distance to<br/>
+				<span class="city"></span>
+				<br/>is<br/> 
+				<span class="distance"></span> km	
+				<div class="country"></div>
+			</div>	
+			<button>Next</button>
+		</div>
+		<div class="finishBox box">
+			<div class="boxText">
+				Total cities: <span class="totalCities"></span>
+			</div>	
+			<button>Try again</button>			
+		</div>
+	</body>
+</html>
